@@ -1,0 +1,23 @@
+<?xml version= "1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Amazon Automation Testing Suite">
+    <test name="Amazon Automation">
+
+        <parameter name="Browser" value="chrome"/>
+        <parameter name="url" value="https://www.amazon.in/"/>
+        <parameter name="Expected_Title" value="Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in"/>
+        <parameter name="SearchBox" value="//*[@id='twotabsearchtextbox']"/>
+        <parameter name="Key" value="Printed Dress"/>
+        <parameter name="Button" value="//*[@id='nav-search-submit-button']"/>
+        <parameter name="ListCount" value="//div/span[contains(text(),'1-48 of over 20,000 results for')]"/>
+        <parameter name="SearchName" value="//span[@class='a-color-state a-text-bold']"/>
+        <parameter name="titleLinks" value="//a[@class='a-link-normal s-link-style a-text-normal']/child::span"/>
+        <parameter name="productName" value="//a[@class='a-link-normal s-link-style a-text-normal']/child::span"/>
+        <parameter name="productPrice" value="//span[@class='a-price-whole']"/>
+
+        <classes>
+            <class name="TestScript.ProductDetails"/>
+        </classes>
+    </test>
+</suite>
